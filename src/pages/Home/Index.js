@@ -17,11 +17,13 @@ export default function Home(){
         setPosts(response.data);
     }
     async function loadComments(){
-        const response = await api.get('comments?postId'+localStorage.id)
+        const response = await api.get('comments?postId='+localStorage.id)
         setComments(response.data);
+        
     }
 
     async function getComments(id){
+        localStorage.removeItem('id');
         setDetails(!details);
         localStorage.setItem('id',id);
         loadComments();
