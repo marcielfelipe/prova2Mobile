@@ -41,14 +41,18 @@ export default function Home(){
                 <div className="posts-container">
                     <ul className="posts">
                         {
+                            
                             posts.map(post=>(
+
                                 <li key={post.id} onClick={()=>getComments(post.id)}>
-                                    <h2 className="title">
-                                        {post.title}
-                                    </h2>
-                                    <p className="body">
-                                        {post.body} 
-                                    </p>
+                                    <div>
+                                        <h2 className="title">
+                                            {post.title}
+                                        </h2>
+                                        <p className="body">
+                                            {post.body} 
+                                        </p>
+                                    </div>
                                 </li>     
                             ))
                         }

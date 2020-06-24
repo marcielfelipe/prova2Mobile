@@ -5,18 +5,25 @@
 }
 .posts-container{
     margin-top: 20px;
-    background-color: #fff;
+    background-color: rgb(168, 163, 163);
     width: 500px;
     margin-left: 50px;
+    border-radius: 8px;
 }
 .posts-container ul {
     list-style: none;
     padding: 10px;
+    
 }
 
 .posts-container ul li{
-    margin-top: 10px;
+    margin:10px;
+    cursor: pointer;
+    background-color: #fff;
     border-radius: 8px;
+}
+.posts-container ul li div{
+    padding: 10px;
 }
 
 .comments-container{
